@@ -28,6 +28,14 @@ body, a, a:link{cursor:url(images/cursor/cursor.cur.html), default;} a:hover {cu
 <script>disableWheelScroll();</script>
 <div id="star" class="video mask overlay">
 
+<div class="video-fallback"></div>
+<video id="video" onloadstart="this.volume=0.3" loop>
+<source src="videos/video.mp4" type="video/mp4"/>
+</video>
+<script>setTimeout(function(){document.getElementById("video").play();}, 3000);</script>
+<canvas class="cover"></canvas>
+</div>
+
 
 <div class="pageoverlay">
 <div class="lightbox">
@@ -38,6 +46,10 @@ body, a, a:link{cursor:url(images/cursor/cursor.cur.html), default;} a:hover {cu
 http://azamarok.ml/" class="hackname" target="" style="padding-left: 2%">.</a></marquee>
 <h1><font color="#FFFFFF">Awishy</font><font color="#FF1493"></font></h1>
 <marquee aligt="center" scrollamount="5" width="840" style="width:520px;"><a class="hackname" style="padding-left: 2%">My favorite games:</a><a class="hackname" style="padding-left: 2%">Overwatch</a><a class="hackname" style="padding-left: 2%">Escape From Tarkov</a><a class="hackname" style="padding-left: 2%">R6S</a><a class="hackname" style="padding-left: 2%">Rocket League</a></marquee>
+</div></div>
+<div class="media animated fadeInUpBig" style="animation-delay: 5s;">
+<a href="http://steamcommunity.com/id/awishy" class="hackname" target="_blank" style="padding-left: 2%">Steam</a><a href="https://vk.com/Awishy" class="hackname" target="_blank" style="padding-left: 2%">VK</a><a href="https://www.youtube.com/channel/UCQdnfAlj0GD8onB4iTl4H3Q?" class="hackname" target="_blank" style="padding-left: 2%">YouTube</a><a href="https://steamcommunity.com/tradeoffer/new/?partner=190212213&token=o5cKPN2u" class="hackname" target="_blank" style="padding-left: 2%">Trade</a>
+</div>
 </div>
 <script>$(document).ready(function() {setTimeout(function(){$('body').addClass('loaded');$('h1').css('color','#222222');}, 2500);});</script>
 </body>
